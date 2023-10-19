@@ -8,6 +8,13 @@
     top: 50%;
     left: 10%;
     font-family: $font-young-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
+
+    .blue {
+      color: $primary-color;
+    }
+    .red {
+      color: $red-color;
+    }
   }
 }

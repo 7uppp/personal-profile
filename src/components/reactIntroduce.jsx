@@ -7,41 +7,42 @@ const ReactIntroduce = () => {
   return (
     <div className="reactIntroduce">
       <div className="reactIntroduce-wrapper">
-        <span>
-          {' '}
-          export const MyHobbies = (colorfulLife) =&gt; {curlyBracesLeft}{' '}
+        <span className="blue">
+          export const MyHobbies = (colorfulLife) =&gt; {curlyBracesLeft}
         </span>
         <br />
-        &nbsp;&nbsp;&nbsp;<span>return ( </span>
+        &nbsp;&nbsp;&nbsp;<span className="blue">return ( </span>
         <br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span>&lt;div className="my-hobbies"&gt;</span>
+        <span className="blue">&lt;div className="my-hobbies"&gt;</span>
         <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;ul&gt;</span>
-        <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span>&lt;li&gt;&#128187;Coding</span>
-        <span>&lt;/li&gt;</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span className="red">&lt;ul&gt;</span>
         <br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span>&lt;li&gt;&#127911;Music</span>
-        <span>&lt;/li&gt;</span>
+        <span className="red">&lt;li&gt;&#128187;Coding</span>
+        <span className="red">&lt;/li&gt;</span>
         <br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span>&lt;li&gt;&#127918;Gaming</span>
-        <span>&lt;/li&gt;</span>
+        <span className="red">&lt;li&gt;&#127911;Music</span>
+        <span className="red">&lt;/li&gt;</span>
         <br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span>&lt;li&gt;&#128032;Fishing</span>
-        <span>&lt;/li&gt;</span>
+        <span className="red">&lt;li&gt;&#127918;Gaming</span>
+        <span className="red">&lt;/li&gt;</span>
         <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;/ul&gt;</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span className="red">&lt;li&gt;&#128032;Fishing</span>
+        <span className="red">&lt;/li&gt;</span>
         <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;/div&gt;</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span className="red">&lt;/ul&gt;</span>
         <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;<span>)</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="blue">&lt;/div&gt;</span>
         <br />
-        <span>{curlyBracesRight}</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span className="blue">)</span>
+        <br />
+        <span className="blue">{curlyBracesRight}</span>
       </div>
     </div>
   )

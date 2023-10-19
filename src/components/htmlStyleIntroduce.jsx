@@ -15,19 +15,8 @@ const HtmlStyleIntroduce = () => {
           &lt;title&gt; Welcome my profile! &lt;/title&gt;
         </span>
         <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span className="red">
-          &lt;p&gt;
-          <br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am Mark,
-          a full-stack developer with <br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;an
-          insatiable thirst for new knowledge.
-        </span>
-        <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="red">&lt;/p&gt;</span>
-        <br />
-        &nbsp;&nbsp;&nbsp;<span className="orange">&lt;/head&gt;</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+        <span className="orange">&lt;/head&gt;</span>
         <br />
         &nbsp;&nbsp;&nbsp;<span className="orange">&lt;body&gt;</span>
         <br />

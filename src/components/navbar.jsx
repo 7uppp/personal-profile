@@ -1,5 +1,4 @@
 import '../css/navbar.scss'
-import introduce from '../assets/image/introduceAnimation.svg'
 
 const Navbar = () => {
   const SKILLS = '{ SKILLS }'
@@ -13,10 +12,6 @@ const Navbar = () => {
         <li>( ABOUT )</li>
         <li>[ CONTACT ]</li>
       </ul>
-
-      <div className="introduce">
-        <img src={introduce} alt="introduce-image" />
-      </div>
     </div>
   )
 }

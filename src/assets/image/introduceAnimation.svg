@@ -7,7 +7,7 @@
             attributeName="stroke-dashoffset" 
             from="1500" 
             to="0" 
-            dur="3s" 
+            dur="1s" 
             fill="freeze" />
     </path>
     <circle cx="4" cy="4" r="3.5" fill="#FCFCFC" stroke="#2B2A44"/>
