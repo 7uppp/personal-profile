@@ -2,13 +2,14 @@ import '../css/navbar.scss'
 import introduce from '../assets/image/introduceAnimation.svg'
 
 const Navbar = () => {
-  const PROJECT = '{ PROJECT }'
+  const SKILLS = '{ SKILLS }'
 
   return (
     <div className="navbar-wrapper">
       <ul className="navbar-items">
         <li>&lt;HI&gt;</li>
-        <li>{PROJECT}</li>
+        <li>{SKILLS}</li>
+        <li>/&nbsp;PROJECT/</li>
         <li>( ABOUT )</li>
         <li>[ CONTACT ]</li>
       </ul>

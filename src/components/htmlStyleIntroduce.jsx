@@ -2,8 +2,8 @@ import '../css/htmlStyleIntroduce.scss'
 
 const HtmlStyleIntroduce = () => {
   return (
-    <div className="animation">
-      <div className="animation-wrapper">
+    <div className="HtmlStyleIntroduce">
+      <div className="HtmlStyleIntroduce-wrapper">
         <span className="purple">&lt;! doctype html &gt;</span>
         <br />
         <span className="purple">&lt;html&gt;</span>
@@ -12,8 +12,20 @@ const HtmlStyleIntroduce = () => {
         <br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <span className="blue">
-          &lt;title&gt; Welcome Mark's Profile! &lt;/title&gt;
+          &lt;title&gt; Welcome my profile! &lt;/title&gt;
         </span>
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span className="red">
+          &lt;p&gt;
+          <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am Mark,
+          a full-stack developer with <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;an
+          insatiable thirst for new knowledge.
+        </span>
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="red">&lt;/p&gt;</span>
         <br />
         &nbsp;&nbsp;&nbsp;<span className="orange">&lt;/head&gt;</span>
         <br />
@@ -23,7 +35,7 @@ const HtmlStyleIntroduce = () => {
         <span className="blue">&lt;div class="what I believe"&gt;</span>
         <br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span className="blue">
+        <span className="red">
           &lt;span&gt; Learning. Coding. Sharing. &lt;/span&gt;
         </span>
         <br />
@@ -34,7 +46,7 @@ const HtmlStyleIntroduce = () => {
         <span className="blue">
           &lt;script <br />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type="learning"
-          src="/computer/keepCoding.jsx" <br />
+          src="/computer/keepCoding.js" <br />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;
         </span>
         <br />

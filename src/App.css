@@ -1,10 +1,14 @@
 .app-wrapper {
   display: flex;
+  position: relative;
   justify-content: center;
-  min-width: 85rem;
+  min-width: 90rem;
   min-height: 100vh;
+  overflow: hidden;
 
   .introduce-components {
     position: relative;
+    display: flex;
+    flex-direction: column;
   }
 }

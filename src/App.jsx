@@ -1,6 +1,7 @@
 import './App.css'
 import HtmlStyleIntroduce from './components/htmlStyleIntroduce'
 import Navbar from './components/navbar'
+import ReactIntroduce from './components/reactIntroduce'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <div className="introduce-components">
         <HtmlStyleIntroduce />
+        <ReactIntroduce />
       </div>
     </div>
   )

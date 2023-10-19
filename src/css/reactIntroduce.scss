@@ -1,0 +1,13 @@
+@import 'variables';
+
+.reactIntroduce {
+  .reactIntroduce-wrapper {
+    position: absolute;
+    margin-top: 10rem;
+    width: 100%;
+    top: 50%;
+    left: 10%;
+    font-family: $font-young-serif;
+    font-size: 1.2rem;
+  }
+}
