@@ -1,0 +1,10 @@
+.app-wrapper {
+  display: flex;
+  justify-content: center;
+  min-width: 85rem;
+  min-height: 100vh;
+
+  .introduce-components {
+    position: relative;
+  }
+}
