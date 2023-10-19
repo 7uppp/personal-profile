@@ -10,8 +10,8 @@
     align-items: center;
     gap: 2.5rem;
     top: 3%;
-    animation: nameSlideFromLeft 0.5s ease-in-out forwards;
-    animation-delay: 0.9s;
+    animation: SlideFromLeft 0.5s ease-in-out forwards;
+    animation-delay: 0.95s;
     opacity: 0;
     transform: translateX(-100%);
 
@@ -40,8 +40,8 @@
     right: 5%;
     opacity: 0;
     transform: translateX(100%);
-    animation: titleSlideFromRight 0.5s ease-in-out forwards;
-    animation-delay: 0.8s;
+    animation: SlideFromRight 0.5s ease-in-out forwards;
+    animation-delay: 0.85s;
 
     img {
       width: 3rem;
@@ -52,12 +52,30 @@
       white-space: nowrap;
       font-family: $font-young-serif;
       font-size: 3rem;
-      color: rgba(44, 18, 157, 0.861);
+      color: #2b2a6e;
+    }
+  }
+
+  .learner {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 46%;
+    left: 0%;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: SlideFromLeft 0.5s ease-in-out forwards;
+    animation-delay: 0.65s;
+
+    span {
+      font-family: $font-arial;
+      font-size: 3rem;
+      color: #2b2a6e;
     }
   }
 }
 
-@keyframes nameSlideFromLeft {
+@keyframes SlideFromLeft {
   from {
     opacity: 0;
     transform: translateX(-100%);
@@ -68,7 +86,7 @@
   }
 }
 
-@keyframes titleSlideFromRight {
+@keyframes SlideFromRight {
   from {
     opacity: 0;
     transform: translateX(100%);

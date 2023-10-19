@@ -14,6 +14,10 @@ const SelfIntroduce = () => {
         <span>A Full-Stack Developer</span>
         <img src={typing} alt="typingImage" />
       </div>
+
+      <div className="learner">
+        <span>A Constantly Eager Learner</span>
+      </div>
     </div>
   )
 }
