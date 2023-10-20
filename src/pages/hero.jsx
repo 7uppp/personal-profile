@@ -5,7 +5,7 @@ import ReactIntroduce from '../components/reactIntroduce'
 import SelfIntroduce from '../components/selfIntroduce'
 const Hero = () => {
   return (
-    <>
+    <div className="hero-wrapper">
       <div className="header-section">
         <Navbar />
         <SelfIntroduce />
@@ -15,7 +15,7 @@ const Hero = () => {
         <HtmlStyleIntroduce />
         <ReactIntroduce />
       </div>
-    </>
+    </div>
   )
 }
 

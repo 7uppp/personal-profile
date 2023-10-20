@@ -1,9 +1,23 @@
-.header-section {
+.hero-wrapper {
   display: flex;
-  flex-direction: column;
+  .header-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .introduce-components {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
 }
-.introduce-components {
-  position: relative;
-  display: flex;
-  flex-direction: column;
+
+@media screen and (max-width: 1440px) {
+  .hero-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .introduce-components {
+      display: none;
+    }
+  }
 }
