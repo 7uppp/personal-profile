@@ -35,7 +35,7 @@ const HtmlStyleIntroduce = () => {
         <span className="blue">
           &lt;script <br />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type="learning"
-          src="/computer/keepCoding.js" <br />
+          src="/vsCode/keepCoding.js" <br />
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;
         </span>
         <br />

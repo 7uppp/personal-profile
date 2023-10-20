@@ -16,8 +16,19 @@ const SelfIntroduce = () => {
       </div>
 
       <div className="learner">
-        <span>A Constantly Eager Learner</span>
+        <span>A Constant Eager Learner</span>
+        <p className="learner-subtitle">always curious, forever learning.</p>
       </div>
+
+      <div className="life">
+        <span>A Life Passionate Individual</span>
+        <p className="life-subtitle">
+          always on the lookout for the next opportunity to expand my horizons.
+        </p>
+      </div>
+
+      <div className="introduce-and">AND</div>
+      <div className="introduce-person">A REAL PERSON</div>
     </div>
   )
 }

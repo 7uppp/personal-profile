@@ -59,6 +59,7 @@
   .learner {
     position: absolute;
     display: flex;
+    flex-direction: column;
     align-items: center;
     top: 46%;
     left: 0%;
@@ -67,11 +68,80 @@
     animation: SlideFromLeft 0.5s ease-in-out forwards;
     animation-delay: 0.65s;
 
+    .learner-subtitle {
+      align-self: flex-end;
+      font-family: $font-arial;
+      font-size: 1rem;
+      color: rgba(100, 99, 99, 0.936);
+      opacity: 0;
+      animation: SubtileFadeIn 1s ease-in-out forwards;
+      animation-delay: 1.1s;
+    }
     span {
       font-family: $font-arial;
       font-size: 3rem;
       color: #2b2a6e;
     }
+  }
+
+  .life {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 18%;
+    left: 10%;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: SlideFromRight 0.5s ease-in-out forwards;
+    animation-delay: 0.35s;
+
+    .life-subtitle {
+      align-self: flex-end;
+      font-family: $font-arial;
+      font-size: 1rem;
+      color: rgba(100, 99, 99, 0.936);
+      opacity: 0;
+      animation: SubtileFadeIn 1s ease-in-out forwards;
+      animation-delay: 1.1s;
+    }
+    span {
+      font-family: $font-arial;
+      font-weight: 700;
+      font-size: 3.5rem;
+      white-space: nowrap;
+      color: #2b2a6e;
+    }
+  }
+  .introduce-and {
+    position: absolute;
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    padding: 0.1rem 0.5rem;
+    font-size: 2rem;
+    bottom: -4%;
+    left: 1%;
+    box-shadow: inset 0.08rem 0.08rem;
+    opacity: 0;
+    animation: SubtileFadeIn 1s ease-in-out forwards;
+    animation-delay: 1.2s;
+  }
+  .introduce-person {
+    position: absolute;
+    left: 50%;
+    bottom: -20%;
+    transform: translateX(-50%);
+    font-family: $font-Playpen;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 4rem;
+    white-space: nowrap;
+    color: #5552e2;
+    opacity: 0;
+    animation: SubtileFadeIn 1s ease-in-out forwards;
+    animation-delay: 1.25s;
   }
 }
 
@@ -94,5 +164,13 @@
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@keyframes SubtileFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
