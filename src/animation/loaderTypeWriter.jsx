@@ -7,8 +7,6 @@ const LoaderTypeWriter = () => {
       <div className="typeWriter-axios">
         <h1>{words}</h1>
       </div>
-
-      <div className="typeWriter-response"></div>
     </div>
   )
 }

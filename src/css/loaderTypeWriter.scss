@@ -1,18 +1,30 @@
 @import 'variables';
 
-.typeWriter-axios h1 {
-  position: absolute;
-  overflow: hidden;
-  border-right: 0.1em solid orange;
-  white-space: nowrap;
-  top: 30%;
-  left: 25%;
-  font-size: 4rem;
-  font-family: $font-Playpen;
-  letter-spacing: 0.1em;
-  width: 0;
-  animation: typing 1s steps(21, end) forwards,
-    blink-caret 0.5s step-end infinite, fadeOut 0.5s 1.5s forwards;
+.typeWriter-axios {
+  h1 {
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 5rem;
+    font-family: $font-Playpen;
+    letter-spacing: 0.1em;
+    width: 0;
+    animation: typing 1s steps(21, end) forwards,
+      blink-caret 0.5s step-end infinite, fadeOut 0.5s 1.5s forwards,
+      blink 1s 2s linear;
+    color: transparent;
+    background-image: linear-gradient(
+      198deg,
+      rgba(6, 25, 229, 0.855) 11%,
+      rgba(211, 12, 28, 0.485) 54%,
+      rgb(51, 135, 246) 87%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
 }
 
 @keyframes typing {
@@ -40,5 +52,15 @@
   }
   to {
     opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
 }

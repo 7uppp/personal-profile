@@ -1,0 +1,53 @@
+@import 'variables.scss';
+
+.scroll-box {
+  width: var(--width, 1.25rem);
+  height: calc(var(--width, 1.25rem) * 1.8);
+  color: red;
+  font-size: calc(var(--width, 1.25rem) * 1.1);
+  line-height: calc(var(--width, 1.25rem) * 1.8);
+  text-align: center;
+  border: 0.0625rem solid #fff;
+  border-radius: 0.3125rem;
+  margin-right: 1.875rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.scroll-num {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  transform: translateY(calc(var(--num) * -9.09%));
+  font-size: 4rem;
+  font-family: $font-Playpen;
+  align-self: center;
+
+  &.animate {
+    animation: move 2s cubic-bezier(0.2, 0, 0.2, 1) infinite,
+      num-bounce 1s calc(var(--delay) * 1s) forwards;
+  }
+}
+
+.border-animate {
+  animation: border-bounce 1s calc(var(--delay) * 1s) forwards;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes num-bounce {
+  0%,
+  100% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+}
