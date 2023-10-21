@@ -3,13 +3,15 @@
 .animation {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   .scroll-number-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 50%;
+    margin-top: 35%;
     gap: 1rem;
 
     animation: fadeIn 2s forwards;

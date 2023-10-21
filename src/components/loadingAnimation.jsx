@@ -2,10 +2,11 @@ import { useState, useEffect } from 'react'
 import ScrollNum from '../animation/ScrollNum'
 import LoaderTypeWriter from '../animation/loaderTypeWriter'
 import '../css/loadingAnimation.scss'
+import { Fc3DBtn } from 'fancy-components'
 
 const LoadingAnimation = () => {
   const [showResponse, setShowResponse] = useState(false)
-
+  new Fc3DBtn()
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowResponse(true)
