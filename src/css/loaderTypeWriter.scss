@@ -1,0 +1,44 @@
+@import 'variables';
+
+.typeWriter-axios h1 {
+  position: absolute;
+  overflow: hidden;
+  border-right: 0.1em solid orange;
+  white-space: nowrap;
+  top: 30%;
+  left: 25%;
+  font-size: 4rem;
+  font-family: $font-Playpen;
+  letter-spacing: 0.1em;
+  width: 0;
+  animation: typing 1s steps(21, end) forwards,
+    blink-caret 0.5s step-end infinite, fadeOut 0.5s 1.5s forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 21ch;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  10% {
+    border-color: orange;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

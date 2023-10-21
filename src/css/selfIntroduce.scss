@@ -1,7 +1,7 @@
 @import 'variables';
 .introduce {
   position: relative;
-  margin-top: 10rem;
+  margin-top: 5rem;
 
   .name {
     position: absolute;
@@ -131,7 +131,7 @@
   .introduce-person {
     position: absolute;
     left: 50%;
-    bottom: -20%;
+    bottom: -15%;
     transform: translateX(-50%);
     font-family: $font-Playpen;
     font-weight: 800;
