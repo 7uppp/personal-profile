@@ -23,4 +23,15 @@
     align-items: center;
     margin-top: 18rem;
   }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    &:focus,
+    &:active {
+      outline: none;
+      background-color: transparent;
+    }
+  }
 }

@@ -6,7 +6,9 @@ const Navbar = () => {
   return (
     <div className="navbar-wrapper">
       <ul className="navbar-items">
-        <li>&lt;HI&gt;</li>
+        <li>
+          <a href="/">&lt;HI&gt;</a>
+        </li>
         <li>{SKILLS}</li>
         <li>/&nbsp;PROJECT/</li>
         <li>( ABOUT )</li>
