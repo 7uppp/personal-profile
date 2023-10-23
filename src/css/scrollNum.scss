@@ -24,7 +24,7 @@
   align-self: center;
 
   &.animate {
-    animation: move 2s cubic-bezier(0.2, 0, 0.2, 1) infinite,
+    animation: move 1s cubic-bezier(0.175, 0.885, 0.32, 1.275),
       num-bounce 1s calc(var(--delay) * 1s) forwards;
   }
 }
@@ -37,17 +37,29 @@
   0% {
     transform: translateY(0%);
   }
+
   100% {
     transform: translateY(-100%);
   }
 }
 
 @keyframes num-bounce {
-  0%,
-  100% {
+  0% {
     transform: translateY(0%);
   }
-  50% {
-    transform: translateY(-10%);
+  20% {
+    transform: translateY(-20%);
+  }
+  40% {
+    transform: translateY(-40%);
+  }
+  60% {
+    transform: translateY(-60%);
+  }
+  80% {
+    transform: translateY(-80%);
+  }
+  100% {
+    transform: translateY(0%);
   }
 }
