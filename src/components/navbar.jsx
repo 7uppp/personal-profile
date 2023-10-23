@@ -1,15 +1,20 @@
 import '../css/navbar.scss'
+import { useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
   const SKILLS = '{ SKILLS }'
+  const Navigate = useNavigate()
 
+  const handleSkillsClick = () => {
+    Navigate('/skills')
+  }
   return (
     <div className="navbar-wrapper">
       <ul className="navbar-items">
         <li>
           <a href="/">&lt;HI&gt;</a>
         </li>
-        <li>{SKILLS}</li>
+        <li onClick={handleSkillsClick}>{SKILLS}</li>
         <li>/&nbsp;PROJECT/</li>
         <li>
           <a href="https://github.com/7uppp">( GITHUB ) </a>

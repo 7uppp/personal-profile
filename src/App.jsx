@@ -1,30 +1,35 @@
 import './App.css'
-import LoadingAnimation from './components/loadingAnimation'
-import Hero from './pages/hero'
 import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import LoadingAnimation from './components/loadingAnimation'
+import SkillsPage from './pages/skillsPage'
+import Hero from './pages/hero'
+import Navbar from './components/navbar'
+
+const LayoutWithNavbar = ({ children }) => {
+  return (
+    <div>
+      <Navbar />
+      {children}
+    </div>
+  )
+}
 
 function App() {
   const [showHero, setShowHero] = useState(false)
 
+  if (!showHero) {
+    return <LoadingAnimation onEnterClick={() => setShowHero(true)} />
+  }
+
   return (
     <Router>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            showHero ? (
-              <Hero />
-            ) : (
-              <LoadingAnimation onEnterClick={() => setShowHero(true)} />
-            )
-          }
-        />
-
-        {/* 这是你的其他路由 */}
-        {/* <Route path="/other-path" element={<OtherComponent />} /> */}
-        {/* 在这里添加更多的路由... */}
-      </Routes>
+      <LayoutWithNavbar>
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/skills" element={<SkillsPage />} />
+        </Routes>
+      </LayoutWithNavbar>
     </Router>
   )
 }
