@@ -3,9 +3,8 @@ import ScrollNum from '../animation/ScrollNum'
 import LoaderTypeWriter from '../animation/loaderTypeWriter'
 import '../css/loadingAnimation.scss'
 import EnterButton from './enterButton'
-import { useNavigate } from 'react-router-dom'
 
-const LoadingAnimation = () => {
+const LoadingAnimation = ({ onEnterClick }) => {
   const [showResponse, setShowResponse] = useState(false)
 
   useEffect(() => {
@@ -30,8 +29,7 @@ const LoadingAnimation = () => {
               <ScrollNum num={0} delay={1} size={'large'} />
             </div>
           </div>
-
-          <EnterButton onClick={() => {}} />
+          <EnterButton onClick={onEnterClick} />
         </>
       )}
     </div>

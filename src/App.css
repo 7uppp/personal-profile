@@ -1,9 +1,7 @@
 .app {
-  .app-wrapper {
-    display: flex;
-    justify-content: center;
-    min-width: 90rem;
-    min-height: 100vh;
-    overflow: hidden;
-  }
+  display: flex;
+  justify-content: center;
+  min-width: 90rem;
+  min-height: 100vh;
+  overflow: hidden;
 }
