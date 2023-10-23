@@ -31,12 +31,11 @@ const ScrollNum = ({ num, delay, size }) => {
   }
 
   return (
-    <div className="scroll-box border-animate" style={scrollBoxStyle}>
+    <div className="scroll-box" style={scrollBoxStyle}>
       <ul
         className="scroll-num"
         style={{
           transform: `translateY(${translateValue}%)`,
-          transition: `transform 1s ease-out`,
         }}>
         {renderNumbers()}
       </ul>

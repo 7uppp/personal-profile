@@ -11,7 +11,9 @@ const Navbar = () => {
         </li>
         <li>{SKILLS}</li>
         <li>/&nbsp;PROJECT/</li>
-        <li>( ABOUT )</li>
+        <li>
+          <a href="https://github.com/7uppp">( GITHUB ) </a>
+        </li>
         <li>[ CONTACT ]</li>
       </ul>
     </div>

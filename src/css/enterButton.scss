@@ -17,7 +17,7 @@ $color-border: rgba(darken($color, 60%), 0.45);
   padding: 1rem 2rem;
   transform-style: preserve-3d;
   transition: all 150ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation: fadeIn 1s 2.1s forwards;
+  animation: fadeIn 1s 4.1s forwards;
   opacity: 0;
 
   &::before {
@@ -35,7 +35,7 @@ $color-border: rgba(darken($color, 60%), 0.45);
   }
 
   &:hover {
-    transform: translate(0, 2rem);
+    transform: translate(0, 0.3rem);
   }
 }
 
