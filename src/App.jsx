@@ -8,7 +8,7 @@ import Navbar from './components/navbar'
 
 const LayoutWithNavbar = ({ children }) => {
   return (
-    <div>
+    <div className="layout">
       <Navbar />
       {children}
     </div>

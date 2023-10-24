@@ -1,0 +1,33 @@
+@import 'variables';
+
+.skills {
+  .skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      font-size: 2rem;
+      font-family: $font-Playpen;
+      margin-top: 3rem;
+      text-decoration: underline;
+    }
+  }
+}
+
+.skills-list {
+  li:first-child {
+    list-style: disc;
+    font-size: 1.5rem;
+    font-family: $font-Playpen;
+  }
+
+  .skills {
+    display: inline-block;
+    margin: 0.5rem 0.5rem;
+    list-style: none;
+    font-weight: 400;
+    font-family: $font-arial;
+    font-size: 1.2rem;
+  }
+}

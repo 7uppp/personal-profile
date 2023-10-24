@@ -1,0 +1,66 @@
+@import 'variables';
+
+.skills-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+
+  p {
+    margin-top: 7rem;
+    font-family: $font-Playpen;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes doubleSpringBounce {
+  0% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(10vh);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(-5vh);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.spring-letter {
+  display: inline-block;
+  animation: doubleSpringBounce 1.5s forwards;
+
+  &.letter1 {
+    animation-delay: 0.1s;
+  }
+  &.letter2 {
+    animation-delay: 0.2s;
+  }
+  &.letter3 {
+    animation-delay: 0.3s;
+  }
+  &.letter4 {
+    animation-delay: 0.4s;
+  }
+  &.letter5 {
+    animation-delay: 0.5s;
+  }
+}

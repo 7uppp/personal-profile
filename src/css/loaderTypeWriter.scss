@@ -1,13 +1,13 @@
 @import 'variables';
 
 .typeWriter-axios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   h1 {
     position: absolute;
     overflow: hidden;
     white-space: nowrap;
-    top: 30%;
-    left: 50%;
-    transform: translateX(-50%);
     font-size: 5rem;
     font-family: $font-Playpen;
     letter-spacing: 0.1em;

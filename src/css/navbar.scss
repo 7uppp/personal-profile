@@ -11,10 +11,19 @@
     gap: 3rem;
     list-style-type: none;
     font-family: $font-young-serif;
-    li:first-child {
-      font-size: 3rem;
-      font-family: $font-indie-flower;
-      font-weight: 700;
+
+    li {
+      cursor: pointer;
+      &:first-child {
+        font-size: 3rem;
+        font-family: $font-indie-flower;
+        font-weight: 700;
+      }
+
+      &:hover {
+        color: $primary-color;
+        scale: 1.2;
+      }
     }
   }
   .introduce {

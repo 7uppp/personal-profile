@@ -1,6 +1,12 @@
-body {
+#root {
+  width: 100%;
   margin: 0;
   display: flex;
   justify-content: center;
   min-height: 100vh;
+}
+
+body,
+html {
+  overflow: hidden;
 }
