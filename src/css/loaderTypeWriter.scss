@@ -1,9 +1,11 @@
 @import 'variables';
 
 .typeWriter-axios {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+
   h1 {
     position: absolute;
     overflow: hidden;
@@ -12,18 +14,52 @@
     font-family: $font-Playpen;
     letter-spacing: 0.1em;
     width: 0;
-    animation: typing 1s steps(21, end) forwards,
-      blink-caret 0.5s step-end infinite, fadeOut 0.5s 1.5s forwards,
+    animation: typing 1s steps(21, end) forwards, fadeOut 0.5s 1.5s forwards,
       blink 1s 2s linear;
-    color: transparent;
-    background-image: linear-gradient(
-      198deg,
-      rgba(6, 25, 229, 0.855) 11%,
-      rgba(211, 12, 28, 0.485) 54%,
-      rgb(51, 135, 246) 87%
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
+  }
+
+  .spring-letter {
+    position: absolute;
+    display: flex;
+    margin-left: 38rem;
+    animation: fadeOut 2.5s 2s forwards;
+
+    span {
+      display: inline-block;
+      font-size: 5rem;
+      font-family: $font-Playpen;
+      color: transparent;
+      background-image: linear-gradient(
+        198deg,
+        rgba(6, 25, 244, 0.855) 11%,
+        rgba(230, 9, 27, 0.689) 54%,
+        rgb(7, 108, 239) 87%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      animation: doubleSpringBounce 2s forwards;
+    }
+    .letter1 {
+      animation-delay: 0.1s;
+    }
+    .letter2 {
+      animation-delay: 0.2s;
+    }
+    .letter3 {
+      animation-delay: 0.3s;
+    }
+    .letter4 {
+      animation-delay: 0.4s;
+    }
+    .letter5 {
+      animation-delay: 0.5s;
+    }
+    .letter6 {
+      animation-delay: 0.6s;
+    }
+    .letter7 {
+      animation-delay: 0.7s;
+    }
   }
 }
 
@@ -33,16 +69,6 @@
   }
   to {
     width: 21ch;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  10% {
-    border-color: orange;
   }
 }
 
@@ -61,6 +87,24 @@
     opacity: 0;
   }
   50% {
+    opacity: 1;
+  }
+}
+
+@keyframes doubleSpringBounce {
+  0% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(10vh);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(-5vh);
+  }
+  100% {
+    transform: translateY(0);
     opacity: 1;
   }
 }

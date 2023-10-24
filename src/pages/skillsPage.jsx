@@ -11,14 +11,6 @@ const SkillsPage = () => {
           continuous learning to stay updated in the industry !
         </p>
       </div>
-
-      <span role="img" aria-label="emoji">
-        <span className="spring-letter letter1">a</span>
-        <span className="spring-letter letter2">x</span>
-        <span className="spring-letter letter3">i</span>
-        <span className="spring-letter letter4">o</span>
-        <span className="spring-letter letter5">s</span>
-      </span>
     </>
   )
 }
