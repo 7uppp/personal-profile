@@ -1,0 +1,28 @@
+@import 'variables';
+
+.skills-card-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .front-end,
+  .back-end,
+  .cloud-service,
+  .api-skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      font-family: $font-Playpen;
+      font-size: 1.5rem;
+    }
+    .front-end-card,
+    .back-end-card,
+    .cloud-service-card,
+    .api-skill-card {
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+    }
+  }
+}

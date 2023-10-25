@@ -10,7 +10,7 @@ const LoadingAnimation = ({ onEnterClick }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowResponse(true)
-    }, 3500)
+    }, 4500)
     return () => clearTimeout(timer)
   }, [])
 

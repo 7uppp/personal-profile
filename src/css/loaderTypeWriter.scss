@@ -15,15 +15,15 @@
     letter-spacing: 0.1em;
     width: 0;
     animation: typing 1s steps(21, end) forwards, fadeOut 0.5s 1.5s forwards,
-      blink 1s 2s linear;
+      blink 2s 2s linear;
   }
 
   .spring-letter {
     position: absolute;
     display: flex;
     margin-left: 38rem;
-    animation: fadeOut 2.5s 2s forwards;
-
+    opacity: 0;
+    animation: fadeOut 4.6s 1s forwards;
     span {
       display: inline-block;
       font-size: 5rem;
@@ -37,28 +37,30 @@
       );
       background-clip: text;
       -webkit-background-clip: text;
-      animation: doubleSpringBounce 2s forwards;
+      animation: doubleSpringBounce 3s forwards;
+      animation-delay: calc(0.1s * var(--i));
     }
-    .letter1 {
-      animation-delay: 0.1s;
+
+    span:nth-child(1) {
+      --i: 1;
     }
-    .letter2 {
-      animation-delay: 0.2s;
+    span:nth-child(2) {
+      --i: 2;
     }
-    .letter3 {
-      animation-delay: 0.3s;
+    span:nth-child(3) {
+      --i: 3;
     }
-    .letter4 {
-      animation-delay: 0.4s;
+    span:nth-child(4) {
+      --i: 4;
     }
-    .letter5 {
-      animation-delay: 0.5s;
+    span:nth-child(5) {
+      --i: 5;
     }
-    .letter6 {
-      animation-delay: 0.6s;
+    span:nth-child(6) {
+      --i: 6;
     }
-    .letter7 {
-      animation-delay: 0.7s;
+    span:nth-child(7) {
+      --i: 7;
     }
   }
 }
@@ -73,24 +75,37 @@
 }
 
 @keyframes fadeOut {
-  from {
+  0% {
     opacity: 1;
   }
-  to {
+  50% {
+    opacity: 0.5;
+  }
+  100% {
     opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
 @keyframes blink {
-  0%,
-  100% {
+  0% {
     opacity: 0;
   }
   50% {
+    opacity: 0.7;
+  }
+  100% {
     opacity: 1;
   }
 }
-
 @keyframes doubleSpringBounce {
   0% {
     transform: translateY(-100vh);
