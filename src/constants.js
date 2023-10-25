@@ -14,7 +14,14 @@ import ec2Icon from '../src/assets/image/aws-ec2.svg'
 import s3Icon from '../src/assets/image/aws-s3.svg'
 import route53Icon from '../src/assets/image/aws-route53.svg'
 import restfulApiIcon from '../src/assets/image/restful.svg'
-import axiosIcon from '../src/assets/image/axios.svg'
+import postmanIcon from '../src/assets/image/postman.svg'
+import swaggerIcon from '../src/assets/image/swagger.svg'
+import mysqlIcon from '../src/assets/image/mysql.svg'
+import mongoDBIcon from '../src/assets/image/mongodb.svg'
+import gitIcon from '../src/assets/image/git.svg'
+import githubIcon from '../src/assets/image/github.svg'
+import npmIcon from '../src/assets/image/npm.svg'
+import yarnIcon from '../src/assets/image/yarn.svg'
 
 
 export const frontSkillsConstants = [
@@ -33,7 +40,7 @@ export const frontSkillsConstants = [
 export const backEndSkillsConstants = [
   { skillName: 'Node.js', Icon: nodejsIcon },
   { skillName: 'Express.js', Icon: expressIcon },
-  { skillName: 'JWT', Icon: jwtIcon },
+
 ]
 
 export const cloudSkillsConstants = [
@@ -44,8 +51,23 @@ export const cloudSkillsConstants = [
 
 export const apiSkillsConstants = [
   { skillName: 'RESTful API', Icon: restfulApiIcon },
-  { skillName: 'Axios', Icon: axiosIcon },
-  // { skillName: 'JSON', Icon: jsonIcon },
-  // { skillName: 'Postman', Icon: postmanIcon },
-  // { skillName: 'Swagger', Icon: swaggerIcon },
+
+]
+
+export const dataBaseSkillsConstants = [
+  { skillName: 'Mysql', Icon: mysqlIcon },
+  { skillName: 'MongoDB', Icon: mongoDBIcon },
+]
+
+export const toolsConstants = [
+  { skillName: 'JWT', Icon: jwtIcon },
+  { skillName: 'Postman', Icon: postmanIcon },
+  { skillName: 'Swagger', Icon: swaggerIcon },
+  { skillName: 'Git', Icon: gitIcon },
+  { skillName: 'GitHub', Icon: githubIcon },
+  { skillName: 'Npm', Icon: npmIcon },
+  { skillName: 'Yarn', Icon: yarnIcon },
+  // { skillName: 'Bitbucket', Icon: bitbucketIcon },
+  // { skillName: 'JIRA', Icon: jiraIcon },
+  // { skillName: 'ESLint', Icon: eslintIcon },
 ]

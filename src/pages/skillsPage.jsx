@@ -8,7 +8,7 @@ const SkillsPage = () => {
         <h1>Skills</h1>
         <ShowSkillCard />
         <p>
-          and that is not all! I am passionate about technology and committed to
+          And that is not all! I am passionate about technology and committed to
           continuous learning to stay updated in the industry !
         </p>
       </div>

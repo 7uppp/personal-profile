@@ -7,7 +7,9 @@
   .front-end,
   .back-end,
   .cloud-service,
-  .api-skill {
+  .api-skill,
+  .database-skill,
+  .others {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,10 +21,17 @@
     .front-end-card,
     .back-end-card,
     .cloud-service-card,
-    .api-skill-card {
+    .api-skill-card,
+    .database-skill-card,
+    .others-card {
       display: flex;
       align-items: center;
       gap: 0.2rem;
     }
+  }
+
+  hr {
+    margin-top: 2rem;
+    width: 100%;
   }
 }
