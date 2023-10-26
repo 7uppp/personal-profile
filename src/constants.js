@@ -23,10 +23,10 @@ import githubIcon from '../src/assets/image/github.svg'
 import npmIcon from '../src/assets/image/npm.svg'
 import yarnIcon from '../src/assets/image/yarn.svg'
 import rh1 from '../src/assets/image/rollinghub.png'
-import rh2 from '../src/assets/image/rh-2.png'
-import rh3 from '../src/assets/image/rh-3.png'
+import rh2 from '../src/assets/image/rh-3.png'
+import rh3 from '../src/assets/image/rh-5.png'
 import rh4 from '../src/assets/image/rh-4.png'
-import rh5 from '../src/assets/image/rh-5.png'
+import rh5 from '../src/assets/image/rh-2.png'
 
 
 export const frontSkillsConstants = [

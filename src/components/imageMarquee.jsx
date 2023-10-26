@@ -32,6 +32,7 @@ const MainComponent = ({ images }) => {
           <ImageSlider
             className={'modal-image'}
             images={images}
+            onImageClick={handleImageClick}
             initialIndex={currentIndex}
           />
         </div>
