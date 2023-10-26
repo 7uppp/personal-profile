@@ -2,15 +2,13 @@
   .projects-page-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 6rem;
 
     img {
       width: 40rem;
       height: 30rem;
     }
     .rh-project {
-      img {
-      }
     }
 
     .ts-project {

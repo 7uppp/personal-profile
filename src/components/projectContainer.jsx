@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import '../css/imageMarquee.scss'
+import '../css/projectContainer.scss'
 import ImageSlider from './imageSlider'
 
-const MainComponent = ({ images }) => {
+const ProjectContainer = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isModalOpen, setIsModalOpen] = useState(false)
 
@@ -41,4 +41,4 @@ const MainComponent = ({ images }) => {
   )
 }
 
-export default MainComponent
+export default ProjectContainer

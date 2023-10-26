@@ -27,6 +27,11 @@ import rh2 from '../src/assets/image/rh-3.png'
 import rh3 from '../src/assets/image/rh-5.png'
 import rh4 from '../src/assets/image/rh-4.png'
 import rh5 from '../src/assets/image/rh-2.png'
+import ts1 from '../src/assets/image/ts1.png'
+import ts2 from '../src/assets/image/ts2.png'
+import ts3 from '../src/assets/image/ts3.png'
+import ts4 from '../src/assets/image/ts4.png'
+import ts5 from '../src/assets/image/ts5.png'
 
 
 export const frontSkillsConstants = [
@@ -80,4 +85,8 @@ export const toolsConstants = [
 
 export const rhImages = [
   rh1, rh2, rh3, rh4, rh5
+]
+
+export const tsImages = [
+  ts1, ts2, ts3, ts4, ts5
 ]

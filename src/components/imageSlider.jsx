@@ -17,7 +17,7 @@ const ImageSlider = ({ images, initialIndex, onImageClick, className }) => {
   return (
     <div className={className} onClick={(e) => e.stopPropagation()}>
       <button className="left-arrow" onClick={goPrev}>
-        ←
+        &lt;
       </button>
       <div
         className="swiper"
@@ -32,7 +32,7 @@ const ImageSlider = ({ images, initialIndex, onImageClick, className }) => {
         ))}
       </div>
       <button className="right-arrow" onClick={goNext}>
-        →
+        &gt;
       </button>
     </div>
   )
