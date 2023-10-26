@@ -15,7 +15,9 @@ const Navbar = () => {
           <Link to="/">&lt;HI&gt;</Link>
         </li>
         <li onClick={handleSkillsClick}>{SKILLS}</li>
-        <li>/&nbsp;PROJECT/</li>
+        <li>
+          <Link to="/projects">/&nbsp;PROJECT/</Link>
+        </li>
         <li>
           <a href="https://github.com/7uppp">( GITHUB ) </a>
         </li>

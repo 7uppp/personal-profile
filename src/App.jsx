@@ -5,6 +5,7 @@ import LoadingAnimation from './components/loadingAnimation'
 import SkillsPage from './pages/skillsPage'
 import Hero from './pages/hero'
 import Navbar from './components/navbar'
+import ProjectsPage from './pages/projectsPage'
 
 const LayoutWithNavbar = ({ children }) => {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/skills" element={<SkillsPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
         </Routes>
       </LayoutWithNavbar>
     </Router>
