@@ -56,8 +56,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 1;
   z-index: 10;
 
+  &.closing {
+    transition: transform 0.5s linear, opacity 0.5s linear;
+    transform: scale(0);
+    opacity: 0;
+  }
   .modal-image {
     max-height: 80vh;
     overflow: hidden;

@@ -5,6 +5,7 @@ import ImageSlider from './imageSlider'
 const ProjectContainer = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [closeModalClicked, setCloseModalClicked] = useState(false)
 
   const handleImageClick = (index) => {
     setCurrentIndex(index)
@@ -12,7 +13,11 @@ const ProjectContainer = ({ images }) => {
   }
 
   const closeModal = () => {
-    setIsModalOpen(false)
+    setCloseModalClicked(true)
+    setTimeout(() => {
+      setIsModalOpen(false)
+      setCloseModalClicked(false)
+    }, 500)
   }
 
   return (
@@ -25,7 +30,7 @@ const ProjectContainer = ({ images }) => {
       />
 
       {isModalOpen && (
-        <div className="modal">
+        <div className={`modal ${closeModalClicked ? 'closing' : ''}`}>
           <div className="modal-image">
             <button className="modal-close-btn" onClick={closeModal}>
               X
