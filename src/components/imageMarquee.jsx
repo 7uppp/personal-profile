@@ -18,6 +18,7 @@ const MainComponent = ({ images }) => {
   return (
     <div className="container">
       <ImageSlider
+        className={'main-image'}
         images={images}
         onImageClick={handleImageClick}
         initialIndex={0}
@@ -28,7 +29,11 @@ const MainComponent = ({ images }) => {
           <button className="modal-close-btn" onClick={closeModal}>
             X
           </button>
-          <ImageSlider images={images} initialIndex={currentIndex} />
+          <ImageSlider
+            className={'modal-image'}
+            images={images}
+            initialIndex={currentIndex}
+          />
         </div>
       )}
     </div>

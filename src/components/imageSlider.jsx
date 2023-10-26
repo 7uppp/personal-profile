@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import '../css/imageSlider.scss'
 
-const ImageSlider = ({ images, initialIndex, onImageClick }) => {
+const ImageSlider = ({ images, initialIndex, onImageClick, className }) => {
   const [currentIndex, setCurrentIndex] = useState(initialIndex)
 
   const goPrev = (e) => {
@@ -15,8 +15,8 @@ const ImageSlider = ({ images, initialIndex, onImageClick }) => {
   }
 
   return (
-    <div className="box" onClick={(e) => e.stopPropagation()}>
-      <button className="arrow left-arrow" onClick={goPrev}>
+    <div className={className} onClick={(e) => e.stopPropagation()}>
+      <button className="left-arrow" onClick={goPrev}>
         ←
       </button>
       <div
@@ -31,7 +31,7 @@ const ImageSlider = ({ images, initialIndex, onImageClick }) => {
           </div>
         ))}
       </div>
-      <button className="arrow right-arrow" onClick={goNext}>
+      <button className="right-arrow" onClick={goNext}>
         →
       </button>
     </div>
