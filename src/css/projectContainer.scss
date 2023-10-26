@@ -10,7 +10,7 @@
       top: 50%;
       left: 0;
       color: gray;
-      font-size: 3rem;
+      font-size: 1.5rem;
       border-style: none;
       z-index: 2;
     }
@@ -20,7 +20,7 @@
       top: 50%;
       right: 0;
       color: gray;
-      font-size: 3rem;
+      font-size: 1.5rem;
       border-style: none;
       z-index: 2;
     }
@@ -48,7 +48,6 @@
 }
 
 .modal {
-  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -59,23 +58,22 @@
   align-items: center;
   z-index: 10;
 
-  .modal-close-btn {
-    position: absolute;
-    top: 7.25rem;
-    right: 56.5rem;
-    background: transparent;
-    border: 0.0625rem solid #ffffff;
-    color: #ffffff;
-    font-size: 1.5rem;
-    cursor: pointer;
-    z-index: 2;
-  }
-
   .modal-image {
     max-height: 80vh;
     overflow: hidden;
     position: relative;
 
+    .modal-close-btn {
+      position: absolute;
+      top: 3.5%;
+      right: 0%;
+      background: transparent;
+      border-style: none;
+      color: gray;
+      font-size: 1.5rem;
+      cursor: pointer;
+      z-index: 2;
+    }
     .swiper {
       width: 80rem;
       height: 80vh;

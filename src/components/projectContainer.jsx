@@ -26,15 +26,16 @@ const ProjectContainer = ({ images }) => {
 
       {isModalOpen && (
         <div className="modal">
-          <button className="modal-close-btn" onClick={closeModal}>
-            X
-          </button>
-          <ImageSlider
-            className={'modal-image'}
-            images={images}
-            onImageClick={handleImageClick}
-            initialIndex={currentIndex}
-          />
+          <div className="modal-image">
+            <button className="modal-close-btn" onClick={closeModal}>
+              X
+            </button>
+            <ImageSlider
+              images={images}
+              onImageClick={handleImageClick}
+              initialIndex={currentIndex}
+            />
+          </div>
         </div>
       )}
     </div>
