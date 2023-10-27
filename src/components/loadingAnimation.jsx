@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import ScrollNum from '../animation/ScrollNum'
+import ScrollNum from '../animation/scrollNum'
 import LoaderTypeWriter from '../animation/loaderTypeWriter'
 import '../css/loadingAnimation.scss'
 import EnterButton from './enterButton'
