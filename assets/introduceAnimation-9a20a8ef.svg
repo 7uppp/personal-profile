@@ -1,0 +1,20 @@
+<svg width="804" height="806" viewBox="0 0 402 403" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M27.5 402.5V306.5C27.5 275.02 53.0198 249.5 84.5 249.5H359C382.196 249.5 401 230.696 401 207.5V207.5C401 184.304 382.196 165.5 359 165.5H111C87.5279 165.5 68.5 146.472 68.5 123V123C68.5 99.5279 87.5279 80.5 111 80.5H222.25C243.375 80.5 260.5 63.3749 260.5 42.25V42.25C260.5 21.1251 243.375 4 222.25 4H3.5" 
+          stroke="url(#paint0_linear_415_805)"
+          stroke-dasharray="1500"
+          stroke-dashoffset="0">
+        <animate 
+            attributeName="stroke-dashoffset" 
+            from="1500" 
+            to="0" 
+            dur="1s" 
+            fill="freeze" />
+    </path>
+    <circle cx="4" cy="4" r="3.5" fill="#FCFCFC" stroke="#2B2A44"/>
+    <defs>
+        <linearGradient id="paint0_linear_415_805" x1="197.5" y1="4" x2="197.5" y2="402.5" gradientUnits="userSpaceOnUse">
+            <stop />
+            <stop offset="1" stop-opacity="0" />
+        </linearGradient>
+    </defs>
+</svg>
