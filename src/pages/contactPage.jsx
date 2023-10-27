@@ -46,7 +46,7 @@ const ContactPage = () => {
       )
       .then(() => {
         setSendLoading(false)
-        toast.success('Message sent!')
+        toast.success('Message sent successfully!')
         setForm({ name: '', email: '', message: '' })
         setFormSent(true)
       })
