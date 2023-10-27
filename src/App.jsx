@@ -6,6 +6,7 @@ import SkillsPage from './pages/skillsPage'
 import Hero from './pages/hero'
 import Navbar from './components/navbar'
 import ProjectsPage from './pages/projectsPage'
+import ContactPage from './pages/contactPage'
 
 const LayoutWithNavbar = ({ children }) => {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/" element={<Hero />} />
           <Route path="/skills" element={<SkillsPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </LayoutWithNavbar>
     </Router>

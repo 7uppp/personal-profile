@@ -1,6 +1,8 @@
 @import 'variables';
 .projects-page {
   margin-top: 1rem;
+  opacity: 0;
+  animation: fadeIn 2s forwards, scale 1s ease-in-out forwards;
   .projects-page-wrapper {
     display: flex;
     flex-direction: column;
@@ -27,9 +29,22 @@
       font-size: 1.2rem;
 
       .rh-information {
-        width: 30rem;
-        text-align: justify;
-        align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+
+        img {
+          width: 12.5rem;
+          height: 3.75rem;
+          cursor: pointer;
+        }
+
+        .rh-information-p {
+          width: 30rem;
+          text-align: justify;
+          align-self: flex-end;
+        }
       }
     }
 
@@ -41,9 +56,22 @@
       font-size: 1.2rem;
 
       .ts-information {
-        width: 30rem;
-        text-align: justify;
-        align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+
+        img {
+          width: 12.5rem;
+          height: 3.75rem;
+          cursor: pointer;
+        }
+
+        .ts-information-p {
+          width: 30rem;
+          text-align: justify;
+          align-self: flex-end;
+        }
       }
     }
   }
@@ -80,5 +108,22 @@
 
   .modal-content::-webkit-scrollbar {
     display: none;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }

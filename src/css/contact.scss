@@ -1,0 +1,98 @@
+@import 'variables';
+
+.contact-page {
+  .contact-page-wrapper {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    opacity: 0;
+    animation: fadeIn 2s forwards, scale 1s ease-in-out forwards;
+
+    h1 {
+      font-family: $font-Playpen;
+      font-size: 3rem;
+    }
+
+    .contact-form {
+      margin-top: 3rem;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .senderInformation {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .input-field {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          color: black;
+          font-weight: medium;
+          margin-bottom: 1rem;
+          font-family: $font-Playpen;
+        }
+
+        input,
+        textarea {
+          background-color: #f9f9f9;
+          padding: 1rem 1.5rem;
+          color: black;
+          border-radius: 0.5rem;
+          border: none;
+          font-weight: medium;
+          outline: none;
+
+          &::placeholder {
+            color: rgba(28, 28, 28, 0.873);
+          }
+        }
+      }
+
+      .submit-button {
+        width: 9.375rem;
+        white-space: nowrap;
+        align-self: flex-end;
+        background-color: #f9f9f9;
+        padding: 0.5rem;
+        box-sizing: border-box;
+        outline: none;
+        font-weight: bold;
+        color: $primary-color;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 1rem;
+        font-family: $font-Playpen;
+        font-size: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

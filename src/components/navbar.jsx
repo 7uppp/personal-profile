@@ -1,5 +1,7 @@
 import '../css/navbar.scss'
 import { useNavigate, Link } from 'react-router-dom'
+import linkedInIcon from '../assets/image/linkedin.svg'
+import githubIcon from '../assets/image/github.svg'
 
 const Navbar = () => {
   const SKILLS = '{ SKILLS }'
@@ -19,9 +21,24 @@ const Navbar = () => {
           <Link to="/projects">/&nbsp;PROJECT/</Link>
         </li>
         <li>
-          <a href="https://github.com/7uppp">( GITHUB ) </a>
+          <Link to="/contact">[ CONTACT ]</Link>
         </li>
-        <li>[ CONTACT ]</li>
+        <li>
+          <img
+            src={githubIcon}
+            alt="githubIcon"
+            onClick={() => window.open('https://github.com/7uppp')}
+          />
+        </li>
+        <li>
+          <img
+            src={linkedInIcon}
+            alt="linkedInIcon"
+            onClick={() =>
+              window.open('https://www.linkedin.com/in/mark-wang7/')
+            }
+          />
+        </li>
       </ul>
     </div>
   )
