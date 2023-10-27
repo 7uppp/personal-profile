@@ -2,7 +2,7 @@ import '../css/projectsPage.scss'
 import ProjectContainer from '../components/projectContainer'
 import { rhImages, tsImages } from '../constants'
 import rhLogo from '../assets/image/rhLogo.svg'
-import tsLogo from '../assets/image/tsLogo.svg'
+import tsLogo from '../assets/image/ts-Logo.svg'
 
 const ProjectsPage = () => {
   return (
