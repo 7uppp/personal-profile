@@ -4,6 +4,9 @@
   .main-image {
     overflow: hidden;
     position: relative;
+    &:hover {
+      scale: 1.1;
+    }
 
     .left-arrow {
       position: absolute;

@@ -9,6 +9,7 @@
   .cloud-service,
   .api-skill,
   .database-skill,
+  .test-skill,
   .others {
     display: flex;
     flex-direction: column;
@@ -23,6 +24,7 @@
     .cloud-service-card,
     .api-skill-card,
     .database-skill-card,
+    .test-skill-card,
     .others-card {
       display: flex;
       align-items: center;

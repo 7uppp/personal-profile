@@ -7,6 +7,7 @@ import {
   apiSkillsConstants,
   dataBaseSkillsConstants,
   toolsConstants,
+  testSkillsConstants,
 } from '../constants'
 
 const ShowSkillsCard = () => {
@@ -64,6 +65,19 @@ const ShowSkillsCard = () => {
         <h2>Database</h2>
         <div className="database-skill-card">
           {dataBaseSkillsConstants.map((skill, index) => (
+            <SkillCard
+              key={index}
+              skillName={skill.skillName}
+              Icon={skill.Icon}
+            />
+          ))}
+        </div>
+      </div>
+
+      <div className="test-skill">
+        <h2>Testing</h2>
+        <div className="test-skill-card">
+          {testSkillsConstants.map((skill, index) => (
             <SkillCard
               key={index}
               skillName={skill.skillName}

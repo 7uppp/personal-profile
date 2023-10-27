@@ -1,17 +1,50 @@
+@import 'variables';
 .projects-page {
+  margin-top: 1rem;
   .projects-page-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 6rem;
+    gap: 2rem;
 
+    .slogan {
+      font-family: $font-Playpen;
+      font-size: 2rem;
+    }
+    hr {
+      width: 100%;
+      border: 0.0625rem solid #808080;
+      opacity: 0.3;
+    }
     img {
       width: 40rem;
       height: 30rem;
     }
     .rh-project {
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      font-family: $font-arial;
+      font-size: 1.2rem;
+
+      .rh-information {
+        width: 30rem;
+        text-align: justify;
+        align-self: flex-end;
+      }
     }
 
     .ts-project {
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      font-family: $font-arial;
+      font-size: 1.2rem;
+
+      .ts-information {
+        width: 30rem;
+        text-align: justify;
+        align-self: flex-end;
+      }
     }
   }
 

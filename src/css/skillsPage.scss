@@ -8,8 +8,9 @@
   overflow: hidden;
   opacity: 0;
   animation: fadeIn 2s forwards, scale 1s ease-in-out forwards;
+  margin-top: 1.5rem;
   p {
-    margin-top: 7rem;
+    margin-top: 3rem;
     font-family: $font-Playpen;
     font-size: 1.5rem;
     white-space: nowrap;
@@ -19,6 +20,11 @@
 .skills-page-wrapper {
   display: flex;
   flex-direction: column;
+
+  h1 {
+    font-size: 3rem;
+    font-family: $font-Playpen;
+  }
 }
 
 @keyframes fadeIn {

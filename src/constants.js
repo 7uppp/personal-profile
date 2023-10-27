@@ -22,6 +22,10 @@ import gitIcon from '../src/assets/image/git.svg'
 import githubIcon from '../src/assets/image/github.svg'
 import npmIcon from '../src/assets/image/npm.svg'
 import yarnIcon from '../src/assets/image/yarn.svg'
+import bitbucketIcon from '../src/assets/image/bitbucket.svg'
+import jiraIcon from '../src/assets/image/jira.svg'
+import ethersJsIcon from '../src/assets/image/ethersjs.svg'
+import metamaskIcon from '../src/assets/image/metamask.svg'
 import rh1 from '../src/assets/image/rollinghub.png'
 import rh2 from '../src/assets/image/rh-3.png'
 import rh3 from '../src/assets/image/rh-5.png'
@@ -32,6 +36,9 @@ import ts2 from '../src/assets/image/ts2.png'
 import ts3 from '../src/assets/image/ts3.png'
 import ts4 from '../src/assets/image/ts4.png'
 import ts5 from '../src/assets/image/ts5.png'
+import cypress from '../src/assets/image/cypress.svg'
+import jest from '../src/assets/image/jest.svg'
+
 
 
 export const frontSkillsConstants = [
@@ -75,11 +82,17 @@ export const toolsConstants = [
   { skillName: 'Swagger', Icon: swaggerIcon },
   { skillName: 'Git', Icon: gitIcon },
   { skillName: 'GitHub', Icon: githubIcon },
+  { skillName: 'Bitbucket', Icon: bitbucketIcon },
   { skillName: 'Npm', Icon: npmIcon },
   { skillName: 'Yarn', Icon: yarnIcon },
-  // { skillName: 'Bitbucket', Icon: bitbucketIcon },
-  // { skillName: 'JIRA', Icon: jiraIcon },
-  // { skillName: 'ESLint', Icon: eslintIcon },
+  { skillName: 'JIRA', Icon: jiraIcon },
+  { skillName: "Ethers.js", Icon: ethersJsIcon },
+  { skillName: "Metamask", Icon: metamaskIcon },
+]
+
+export const testSkillsConstants = [
+  { skillName: 'Cypress', Icon: cypress },
+  { skillName: 'Jest', Icon: jest },
 ]
 
 
