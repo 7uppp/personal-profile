@@ -23,7 +23,7 @@
         - name: Build
           run: npm run build
           env:
-            VITE=${{ secrets.VITE }}
+            VITE_MY_ENV_VARIABLE: ${{ secrets.VITE_MY_ENV_VARIABLE }}
 
         - name: Deploy to GitHub Pages
           uses: peaceiris/actions-gh-pages@v3
