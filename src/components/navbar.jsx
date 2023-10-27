@@ -18,10 +18,10 @@ const Navbar = () => {
         </li>
         <li onClick={handleSkillsClick}>{SKILLS}</li>
         <li>
-          <Link to="/projects">/&nbsp;PROJECT/</Link>
+          <Link to='/projects'>/&nbsp;PROJECT/</Link>
         </li>
         <li>
-          <Link to="/contact">[ CONTACT ]</Link>
+          <Link to='/contact'>[ CONTACT ]</Link>
         </li>
         <li>
           <img

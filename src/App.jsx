@@ -25,7 +25,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <Router basename={import.meta.env.DEV ? '/personal-profile' : '/personal-profile/'}>
       <LayoutWithNavbar>
         <Routes>
           <Route path="/" element={<Hero />} />
