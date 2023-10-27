@@ -3,8 +3,7 @@ name: Build and Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master # 或你的默认分支名，例如: main
-
+      - main
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -16,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '18' # 或其他你的项目所需的 Node.js 版本
+          node-version: '18'
 
       - name: Install Dependencies
         run: npm install
