@@ -13,4 +13,7 @@
 
 ### Link
 
-You can vist the website here : 
+You can vist the website here : https://7uppp.github.io/personal-profile/
+
+### Warning
+Please note it is the 1st version and fully resposive pages are under processing. 
