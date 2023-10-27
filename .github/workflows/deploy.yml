@@ -25,7 +25,7 @@
           env:
             VITE_EMAIL_SERVICE_ID: ${{ secrets.VITE_EMAIL_SERVICE_ID }}
             VITE_EMAIL_TEMPLATE_ID: ${{ secrets.VITE_EMAIL_TEMPLATE_ID }}
-            VITE_EMAIL_USER_ID: ${{ secrets.VITE_EMAIL_USER_ID }}
+            VITE_EMAIL_PUBLIC_KEY: ${{ secrets.VITE_EMAIL_PUBLIC_KEY }}
 
         - name: Deploy to GitHub Pages
           uses: peaceiris/actions-gh-pages@v3
