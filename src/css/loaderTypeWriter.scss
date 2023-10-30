@@ -14,6 +14,8 @@
     font-family: $font-Playpen;
     letter-spacing: 0.1em;
     width: 0;
+    -webkit-animation: typing 1s steps(21, end) forwards,
+      fadeOut 0.5s 1.5s forwards, blink 2s 2s linear;
     animation: typing 1s steps(21, end) forwards, fadeOut 0.5s 1.5s forwards,
       blink 2s 2s linear;
   }
@@ -23,6 +25,7 @@
     display: flex;
     margin-left: 38rem;
     opacity: 0;
+    -webkit-animation: fadeOut 4.6s 1s forwards;
     animation: fadeOut 4.6s 1s forwards;
     span {
       display: inline-block;
@@ -37,7 +40,9 @@
       );
       background-clip: text;
       -webkit-background-clip: text;
+      -webkit-animation: doubleSpringBounce 3s forwards;
       animation: doubleSpringBounce 3s forwards;
+      -webkit-animation-delay: calc(0.1s * var(--i));
       animation-delay: calc(0.1s * var(--i));
     }
 
@@ -65,12 +70,33 @@
   }
 }
 
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 21ch;
+  }
+}
+
 @keyframes typing {
   from {
     width: 0;
   }
   to {
     width: 21ch;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -86,9 +112,30 @@
   }
 }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
   }
   100% {
     opacity: 1;
@@ -103,6 +150,23 @@
     opacity: 0.7;
   }
   100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes doubleSpringBounce {
+  0% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(10vh);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(-5vh);
+  }
+  100% {
+    transform: translateY(0);
     opacity: 1;
   }
 }

@@ -11,7 +11,9 @@
     gap: 2.5rem;
     left: 2%;
     top: 3%;
+    -webkit-animation: SlideFromLeft 0.5s ease-in-out forwards;
     animation: SlideFromLeft 0.5s ease-in-out forwards;
+    -webkit-animation-delay: 0.95s;
     animation-delay: 0.95s;
     opacity: 0;
     transform: translateX(-100%);
@@ -41,7 +43,9 @@
     right: 5%;
     opacity: 0;
     transform: translateX(100%);
+    -webkit-animation: SlideFromRight 0.5s ease-in-out forwards;
     animation: SlideFromRight 0.5s ease-in-out forwards;
+    -webkit-animation-delay: 0.85s;
     animation-delay: 0.85s;
 
     img {
@@ -66,7 +70,9 @@
     left: 2%;
     opacity: 0;
     transform: translateX(-100%);
+    -webkit-animation: SlideFromLeft 0.5s ease-in-out forwards;
     animation: SlideFromLeft 0.5s ease-in-out forwards;
+    -webkit-animation-delay: 0.65s;
     animation-delay: 0.65s;
 
     .learner-subtitle {
@@ -75,7 +81,9 @@
       font-size: 1rem;
       color: rgba(100, 99, 99, 0.936);
       opacity: 0;
+      -webkit-animation: SubtileFadeIn 1s ease-in-out forwards;
       animation: SubtileFadeIn 1s ease-in-out forwards;
+      -webkit-animation-delay: 1.1s;
       animation-delay: 1.1s;
     }
     span {
@@ -94,7 +102,9 @@
     left: 10%;
     opacity: 0;
     transform: translateX(100%);
+    -webkit-animation: SlideFromRight 0.5s ease-in-out forwards;
     animation: SlideFromRight 0.5s ease-in-out forwards;
+    -webkit-animation-delay: 0.35s;
     animation-delay: 0.35s;
 
     .life-subtitle {
@@ -103,7 +113,9 @@
       font-size: 1rem;
       color: rgba(100, 99, 99, 0.936);
       opacity: 0;
+      -webkit-animation: SubtileFadeIn 1s ease-in-out forwards;
       animation: SubtileFadeIn 1s ease-in-out forwards;
+      -webkit-animation-delay: 1.1s;
       animation-delay: 1.1s;
     }
     span {
@@ -126,7 +138,9 @@
     left: 1%;
     box-shadow: inset 0.08rem 0.08rem;
     opacity: 0;
+    -webkit-animation: SubtileFadeIn 1s ease-in-out forwards;
     animation: SubtileFadeIn 1s ease-in-out forwards;
+    -webkit-animation-delay: 1.2s;
     animation-delay: 1.2s;
   }
   .introduce-person {
@@ -141,8 +155,21 @@
     white-space: nowrap;
     color: #5552e2;
     opacity: 0;
+    -webkit-animation: SubtileFadeIn 1s ease-in-out forwards;
     animation: SubtileFadeIn 1s ease-in-out forwards;
+    -webkit-animation-delay: 1.25s;
     animation-delay: 1.25s;
+  }
+}
+
+@-webkit-keyframes SlideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -150,6 +177,17 @@
   from {
     opacity: 0;
     transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes SlideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
   }
   to {
     opacity: 1;
@@ -165,6 +203,14 @@
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@-webkit-keyframes SubtileFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 @keyframes SubtileFadeIn {

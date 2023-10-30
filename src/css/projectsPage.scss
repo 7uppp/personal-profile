@@ -2,6 +2,7 @@
 .projects-page {
   margin-top: 1rem;
   opacity: 0;
+  -webkit-animation: fadeIn 2s forwards, scale 1s ease-in-out forwards;
   animation: fadeIn 2s forwards, scale 1s ease-in-out forwards;
   .projects-page-wrapper {
     display: flex;
@@ -108,12 +109,29 @@
     display: none;
   }
 }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
+  }
+}
+@-webkit-keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
 @keyframes scale {

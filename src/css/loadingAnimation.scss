@@ -13,6 +13,8 @@
     align-items: center;
     gap: 1rem;
 
+    -webkit-animation: fadeIn 2s forwards;
+
     animation: fadeIn 2s forwards;
 
     .typeWriter-response {
@@ -23,6 +25,15 @@
     .scroll-number {
       display: flex;
     }
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
