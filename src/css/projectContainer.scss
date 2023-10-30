@@ -127,3 +127,19 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .modal {
+    .modal-image {
+      .swiper {
+        width: 40rem;
+        height: 60vh;
+        .swiper-item {
+          img {
+            height: 40rem;
+          }
+        }
+      }
+    }
+  }
+}

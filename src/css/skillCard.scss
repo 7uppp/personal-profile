@@ -2,10 +2,21 @@
 
 .skill-card {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.4rem;
-  box-sizing: border-box;
-  padding: 0.5rem;
-  font-family: $font-Playpen;
+  .skill-card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    font-family: $font-Playpen;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .skill-card {
+    flex-wrap: wrap;
+    gap: 0.1em;
+    font-size: 0.5rem;
+  }
 }

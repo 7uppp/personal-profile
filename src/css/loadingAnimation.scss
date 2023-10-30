@@ -34,3 +34,27 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 780px) {
+  .animation {
+    .scroll-number-wrapper {
+      .typeWriter-response {
+        h1 {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) and (min-width: 780px) {
+  .animation {
+    .scroll-number-wrapper {
+      .typeWriter-response {
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

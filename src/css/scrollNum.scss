@@ -23,3 +23,21 @@
   font-family: $font-Playpen;
   align-self: center;
 }
+
+@media screen and (max-width: 780px) {
+  .scroll-box {
+    width: 1rem;
+  }
+  .scroll-num {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 780px) {
+  .scroll-box {
+    width: 2rem;
+  }
+  .scroll-num {
+    font-size: 2rem;
+  }
+}

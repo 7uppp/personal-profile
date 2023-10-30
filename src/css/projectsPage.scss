@@ -43,7 +43,6 @@
         .rh-information-p {
           width: 30rem;
           text-align: justify;
-          align-self: flex-end;
         }
       }
     }
@@ -70,7 +69,6 @@
         .ts-information-p {
           width: 30rem;
           text-align: justify;
-          align-self: flex-end;
         }
       }
     }
@@ -125,5 +123,28 @@
 
   100% {
     transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .projects-page {
+    margin: 0 auto;
+    margin-top: 11rem;
+    .projects-page-wrapper {
+      .rh-project,
+      .ts-project {
+        max-width: 600px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+
+        .rh-information,
+        .ts-information {
+          p {
+            align-self: normal;
+          }
+        }
+      }
+    }
   }
 }

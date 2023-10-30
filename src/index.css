@@ -5,8 +5,3 @@
   justify-content: center;
   min-height: 100vh;
 }
-
-body,
-html {
-  overflow: hidden;
-}

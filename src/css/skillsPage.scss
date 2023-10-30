@@ -1,11 +1,11 @@
 @import 'variables';
 
 .skills-page {
+  width: 100%;
   display: flex;
   justify-content: center;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
   opacity: 0;
   animation: fadeIn 2s forwards, scale 1s ease-in-out forwards;
   margin-top: 1.5rem;
@@ -13,7 +13,7 @@
     margin-top: 3rem;
     font-family: $font-Playpen;
     font-size: 1.5rem;
-    white-space: nowrap;
+    white-space: wrap;
   }
 }
 
@@ -42,5 +42,11 @@
 
   100% {
     transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .skills-page {
+    margin-top: 8rem;
   }
 }

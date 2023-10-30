@@ -43,4 +43,38 @@
       background-color: transparent;
     }
   }
+
+  .navbar-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navbar-wrapper {
+    .navbar-items {
+      display: none;
+    }
+
+    .navbar-mobile {
+      display: flex;
+      img {
+        cursor: pointer;
+      }
+    }
+
+    .navbar-items-mobile {
+      position: absolute;
+      display: block;
+      flex-direction: column;
+      align-items: flex-start;
+      list-style-type: none;
+      top: 4.5%;
+      margin: 0;
+      padding: 0;
+      li {
+        cursor: pointer;
+        margin-bottom: 0.3125rem;
+      }
+    }
+  }
 }

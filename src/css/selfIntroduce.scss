@@ -9,6 +9,7 @@
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
+    left: 2%;
     top: 3%;
     animation: SlideFromLeft 0.5s ease-in-out forwards;
     animation-delay: 0.95s;
@@ -62,7 +63,7 @@
     flex-direction: column;
     align-items: center;
     top: 46%;
-    left: 0%;
+    left: 2%;
     opacity: 0;
     transform: translateX(-100%);
     animation: SlideFromLeft 0.5s ease-in-out forwards;
@@ -108,7 +109,7 @@
     span {
       font-family: $font-arial;
       font-weight: 700;
-      font-size: 3.5rem;
+      font-size: 3.2rem;
       white-space: nowrap;
       color: #2b2a6e;
     }
@@ -172,5 +173,50 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .introduce {
+    img {
+      width: 500px;
+    }
+    .name {
+      span {
+        &:first-child {
+          font-size: 2rem;
+        }
+        &:last-child {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .title {
+      left: 25%;
+      img {
+        width: 2rem;
+      }
+      span {
+        font-size: 2rem;
+      }
+    }
+
+    .learner {
+      top: 45%;
+      span {
+        font-size: 2rem;
+      }
+    }
+    .life {
+      bottom: 5%;
+      span {
+        font-size: 2.5rem;
+      }
+    }
+
+    .introduce-person {
+      font-size: 2rem;
+    }
   }
 }
