@@ -49,8 +49,9 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .navbar-wrapper {
+    margin-bottom: 6rem;
     .navbar-items {
       display: none;
     }

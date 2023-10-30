@@ -100,15 +100,15 @@ const ContactPage = () => {
           <label className="input-field">
             <span>Your Message</span>
             <textarea
-              rows="4"
-              cols="50"
               name="message"
               value={form.message}
               onChange={handleChange}
               placeholder="Please write your message here"
               style={{
-                width: '31.25rem',
-                height: '20rem',
+                rows: '4',
+                cols: '50',
+                maxWidth: '31.25rem',
+                minHeight: '10rem',
                 resize: 'none',
                 overflow: 'hidden',
               }}

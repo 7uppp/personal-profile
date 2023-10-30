@@ -176,18 +176,20 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   .introduce {
     img {
-      width: 500px;
+      width: 350px;
     }
     .name {
+      display: flex;
+      align-items: center;
       span {
         &:first-child {
-          font-size: 2rem;
+          font-size: 1.5rem;
         }
         &:last-child {
-          font-size: 2rem;
+          font-size: 1.5rem;
         }
       }
     }
@@ -195,28 +197,78 @@
     .title {
       left: 25%;
       img {
-        width: 2rem;
+        width: 1.5rem;
       }
       span {
-        font-size: 2rem;
+        font-size: 1rem;
       }
     }
 
     .learner {
+      display: flex;
+      flex-direction: column;
       top: 45%;
       span {
-        font-size: 2rem;
+        font-size: 1rem;
       }
     }
     .life {
       bottom: 5%;
       span {
-        font-size: 2.5rem;
+        font-size: 1rem;
       }
+    }
+    .introduce-and {
+      bottom: -4%;
     }
 
     .introduce-person {
+      bottom: -18%;
       font-size: 2rem;
     }
   }
 }
+// @media screen and (max-width: 560px) {
+//   .introduce {
+//     img {
+//       width: 400px;
+//     }
+//     .name {
+//       span {
+//         &:first-child {
+//           font-size: 2rem;
+//         }
+//         &:last-child {
+//           font-size: 2rem;
+//         }
+//       }
+//     }
+
+//     .title {
+//       left: 25%;
+//       img {
+//         width: 2rem;
+//       }
+//       span {
+//         font-size: 1.5rem;
+//       }
+//     }
+
+//     .learner {
+//       top: 42%;
+//       span {
+//         font-size: 2rem;
+//       }
+//     }
+//     .life {
+//       bottom: 5%;
+//       span {
+//         font-size: 1.5rem;
+//       }
+//     }
+
+//     .introduce-person {
+//       font-size: 2rem;
+//     }
+//   }
+// }

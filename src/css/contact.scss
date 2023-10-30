@@ -1,8 +1,10 @@
 @import 'variables';
 
 .contact-page {
+  width: 100%;
+  display: flex;
   .contact-page-wrapper {
-    width: 50rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,6 +24,7 @@
       margin-right: 0.5rem;
       display: flex;
       flex-direction: column;
+      flex-wrap: wrap;
       gap: 2rem;
 
       .senderInformation {
@@ -59,9 +62,9 @@
       }
 
       .submit-button {
-        width: 9.375rem;
+        max-width: 9.375rem;
         white-space: nowrap;
-        align-self: flex-end;
+        align-self: center;
         background-color: #f9f9f9;
         padding: 0.5rem;
         box-sizing: border-box;
@@ -94,5 +97,15 @@
 
   100% {
     transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .senderInformation {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
   }
 }
