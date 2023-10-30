@@ -4,7 +4,7 @@ $color-border: rgba(darken($color, 60%), 0.45);
 
 .enter-button-wrapper {
   position: absolute;
-  bottom: 30%;
+  bottom: 25%;
   background: $color;
   color: #ffffff;
   border-radius: 2rem;
@@ -95,11 +95,5 @@ $color-border: rgba(darken($color, 60%), 0.45);
 @media screen and (max-width: 780px) {
   .enter-button-wrapper {
     font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 1300px) and (min-width: 780px) {
-  .enter-button-wrapper {
-    font-size: 1.5rem;
   }
 }
