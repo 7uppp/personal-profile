@@ -187,31 +187,16 @@
     opacity: 1;
   }
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1300px) {
   .typeWriter-axios {
     h1 {
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
 
     .spring-letter {
-      margin-left: 7.5rem;
+      margin-left: 11rem;
       span {
-        font-size: 1rem;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1300px) and (min-width: 780px) {
-  .typeWriter-axios {
-    h1 {
-      font-size: 3rem;
-    }
-
-    .spring-letter {
-      margin-left: 22rem;
-      span {
-        font-size: 3rem;
+        font-size: 1.5rem;
       }
     }
   }
