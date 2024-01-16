@@ -17,3 +17,6 @@ You can vist the website here : https://7uppp.github.io/personal-profile/
 
 ### Warning
 Please note it is the 1st version and mobile pages are under processing and it may result some bug when you vist by phone. 
+
+
+Inspired by @LgyLight
