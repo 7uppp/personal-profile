@@ -1,6 +1,6 @@
 import '../css/selfIntroduce.scss'
 import introduce from '../assets/image/introduceAnimation.svg'
-import typing from '../assets/image/typing.gif'
+// import typing from '../assets/image/typing.gif'
 
 const SelfIntroduce = () => {
   return (
@@ -12,7 +12,7 @@ const SelfIntroduce = () => {
       </div>
       <div className="title">
         <span>A Full-Stack Developer</span>
-        <img src={typing} alt="typingImage" />
+        {/* <img src={typing} alt="typingImage" /> */}
       </div>
 
       <div className="learner">

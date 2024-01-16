@@ -18,14 +18,18 @@ const LayoutWithNavbar = ({ children }) => {
 }
 
 function App() {
-  const [showHero, setShowHero] = useState(false)
+  //remove loading animation
+  // const [showHero, setShowHero] = useState(false)
 
-  if (!showHero) {
-    return <LoadingAnimation onEnterClick={() => setShowHero(true)} />
-  }
+  // if (!showHero) {
+  //   return <LoadingAnimation onEnterClick={() => setShowHero(true)} />
+  // }
 
   return (
-    <Router basename={import.meta.env.DEV ? '/personal-profile' : '/personal-profile/'}>
+    <Router
+      basename={
+        import.meta.env.DEV ? '/personal-profile' : '/personal-profile/'
+      }>
       <LayoutWithNavbar>
         <Routes>
           <Route path="/" element={<Hero />} />
